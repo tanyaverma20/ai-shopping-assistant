@@ -1,28 +1,44 @@
-# ai-shopping-assistant
-AI-powered e-commerce platform with semantic search, personalized recommendations, and LLM-based conversational shopping assistant.
-
 # AI Shopping Assistant Platform
-> An intelligent full-stack e-commerce platform that enables users to discover, compare, and purchase products using natural language powered by AI.
 
-## Key Features
-### AI-Powered Shopping
-- Conversational product search using LLM
-- Multi-step reasoning for product comparison
-- Smart suggestions based on user queries
+> An intelligent, full-stack e-commerce platform that combines **Generative AI (LLMs)** and **Machine Learning** to deliver personalized, conversational, and efficient shopping experiences.
 
-### Semantic Search
-- Understands user intent beyond keywords
-- Improves product discovery experience
+## Overview
+Traditional e-commerce platforms rely on manual search and filtering.  
+This project transforms that experience by enabling **AI-driven product discovery**, where users can interact naturally and receive intelligent, personalized recommendations.
 
-### Personalized Recommendations
-- Based on user behavior and interactions
-- Collaborative filtering approach
+##  Key Features
+### Core E-commerce
+- User authentication (JWT + OAuth)
+- Product browsing, filtering, sorting
+- Product detail pages with reviews
+- Cart & checkout system
+- Order tracking & history
+- Secure payment integration (Stripe/Razorpay)
 
-### Review Intelligence
-- AI summarizes reviews into:
-  - Pros
-  - Cons
-  - Overall sentiment
+### Generative AI (LLM Features)
+- **Conversational Shopping Assistant**  
+  Natural language queries like:  
+  *“Suggest budget-friendly running shoes under ₹2000”*
+
+- **Multi-step Reasoning**  
+  AI compares products and explains recommendations  
+
+- **Semantic Search**  
+  Understands intent beyond keywords  
+
+- **AI Review Intelligence**  
+  Summarizes reviews into pros, cons, and sentiment  
+
+### Machine Learning Features
+- **Recommendation System**
+  - Collaborative filtering
+  - Content-based filtering
+  - Personalized suggestions
+- **Sentiment Analysis**
+  - Classifies reviews (positive/negative)
+  - Improves product ranking
+- **Demand Prediction (Optional)**
+  - Identifies trending products
 
 ## Tech Stack
 ### Frontend
@@ -33,30 +49,36 @@ AI-powered e-commerce platform with semantic search, personalized recommendation
 - Express.js
 ### Database
 - MongoDB
-### AI Integration
-- OpenAI API (LLM-powered features)
+### AI Layer
+- OpenAI API (LLM-based features)
+### ML Layer
+- Python (Scikit-learn, Pandas, NumPy)
 
 ## System Architecture
-Client (React)
-   ↓
+Client (React / Next.js)
+        ↓
 Backend API (Node.js / Express)
-   ↓
+        ↓
 Database (MongoDB)
-   ↓
+        ↓
 AI Layer (OpenAI API)
+        ↓
+ML Models (Recommendation, Sentiment)
 
 ## Performance Optimizations
-- Redis caching for faster API responses
-- Indexed database queries
-- Reduced latency from ~800ms → ~300ms
+
+- Redis caching for faster responses  
+- Indexed database queries  
+- Reduced API latency from ~800ms → ~300ms  
 
 ## Security
-- JWT Authentication
-- Password hashing (bcrypt)
-- Input validation & API protection
+- JWT-based authentication  
+- Password hashing (bcrypt)  
+- Input validation & rate limiting  
+- Secure API handling  
 
 ## Demo
-(Add screenshots or demo video here)
+> Add screenshots / demo video / live link here
 
 ## Installation
 ```bash
